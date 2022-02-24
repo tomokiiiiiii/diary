@@ -16,6 +16,9 @@ class CreateCommentsTable extends Migration
         Schema::create('comments', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps();
+            $table->string('letter',20);
+            $table->integer('diary_id')->unsigned();
+            $table->softDeletes();
         });
     }
 
