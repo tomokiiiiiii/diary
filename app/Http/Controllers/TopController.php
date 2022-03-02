@@ -7,8 +7,8 @@ use Illuminate\Http\Request;
 
 class TopController extends Controller
 {
-    public function diaries(Top $post)
+    public function diaries(Request $request)
     {
-        return $post->get();
+       return view('diaries/top');
     }
 }
