@@ -10,9 +10,11 @@
     <body>
         <h1>日記</h1>
         <div class='toppages'>
-                <p class='body'>日記内容</p>
-                <p class='comment'>コメント</p>
-                <p class='emoji'>stamp</p>
+            @foreach($diaries as $diary)
+                <p class='body'>{{$diary->diary}}</p>
+                {{-- <p class='comment'>{{&diary-></p> --}}
+            @endforeach
+                
                 
                 <a href="" class="btn btn--orane">次へ</a>
               
