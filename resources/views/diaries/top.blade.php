@@ -19,5 +19,8 @@
                 <a href="" class="btn btn--orane">次へ</a>
               
         </div>
+        <div class='paginate'>
+            {{ $diaries->links() }}
+        </div>
     </body>
 </html>
