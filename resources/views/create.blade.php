@@ -17,10 +17,11 @@
             </div>
             <div class="picture">
                 <h2>写真</h2>
-                <input type="file" name="diary[picture]">
+                <input type="file" name="diary[picture]"　accept=".png, .jpg, .jpeg, .pdf, .doc">
             </div>
-            <input type="submit" value="次へ"/>
         </form>
         <div class="back">[<a href="/">戻る</a>]</div> 
+        <div class="back">[<a href="/">次へ</a>]</div> 
+        
     </body>
 </html>
