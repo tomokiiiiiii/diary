@@ -16,6 +16,11 @@ class TopController extends Controller
     {
         return view('show')->with(['diary' => $diary]);
     }
+    
+    public function create()
+    {
+        return view('create');
+    }
 }
 
 

@@ -9,6 +9,7 @@
     </head>
     <body>
         <h1>日記</h1>
+        <p class='create'>[<a href='/top/create'>create</a>]</p>
         <div class='toppages'>
             @foreach($diaries as $diary)
                 <a href='/top/{{ $diary ->id }}'><p class='body'>{{$diary->diary}}</p></a>
@@ -16,7 +17,7 @@
             @endforeach
                 
                 
-                <a href="" class="btn btn--orane">次へ</a>
+                <a href="" class="btn btn--orane">書く</a>
               
         </div>
         <div class='paginate'>
