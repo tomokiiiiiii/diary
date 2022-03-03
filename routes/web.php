@@ -27,3 +27,5 @@ Route::get('/diaries', function () {
 
 
 Route::get('/top', 'TopController@diaries')->name('top');
+
+Route::get('/diaries/{diary}', 'TopController@show');

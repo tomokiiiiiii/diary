@@ -10,17 +10,10 @@
     <body>
         <h1>日記</h1>
         <div class='toppages'>
-            @foreach($diaries as $diary)
-                <a href='/top/{{ $diary ->id }}'><p class='body'>{{$diary->diary}}</p></a>
-                {{-- <p class='comment'>{{&diary-></p> --}}
-            @endforeach
-                
-                
-                <a href="" class="btn btn--orane">次へ</a>
-              
+            <p class='body'>{{$diary->diary}}</p>
+            {{-- <p class='comment'>{{&diary-></p> --}}
+            <p class='updated_at'>{{ $diary->updated_at }}</p>
         </div>
-        <div class='paginate'>
-            {{ $diaries->links() }}
-        </div>
+        <div class='back'>[<a href='/'>戻る</a>]</div>
     </body>
 </html>

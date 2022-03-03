@@ -11,6 +11,11 @@ class TopController extends Controller
     {
        return view('diaries/top')->with(['diaries'=> $diary->getPaginateByLimit()]);
     }
+    
+    public function show(Diary $diary)
+    {
+        return view('show')->with(['diary' => $diary]);
+    }
 }
 
 
