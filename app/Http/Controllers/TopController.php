@@ -21,6 +21,12 @@ class TopController extends Controller
     {
         return view('create');
     }
+    public function store(Request $request, Diary $diary)
+    {
+        $input = $request['diary'];
+        $diary->fill($input)->save();
+        return redirect('/top/' . $diary->id);
+    }
 }
 
 

@@ -31,3 +31,7 @@ Route::get('/top', 'TopController@diaries')->name('top');
 Route::get('/diaries/{diary}', 'TopController@show');
 
 Route::get('top/create','TopController@create');
+
+Route::post('/top', 'TopController@store');
+
+//Route::post('top','TopController@store');

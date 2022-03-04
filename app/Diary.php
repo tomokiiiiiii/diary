@@ -6,6 +6,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Diary extends Model
 {
+    protected $fillable=[
+        'diary',
+        'picture',
+    ];
+    
+    
     public function getPaginateByLimit(int $limit_count = 5)
     {
     // updated_atで降順に並べたあと、limitで件数制限をかける
